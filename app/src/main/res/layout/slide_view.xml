@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ExpandableListView
+        android:id="@+id/expandable_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:childDivider="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:childIndicator="@null"
+        android:groupIndicator="@null"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_slide"
+        android:layout_alignParentEnd="true"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_center_letter"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/tv_center_letter"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_center_letter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:textSize="40sp"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
